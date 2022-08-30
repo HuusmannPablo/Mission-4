@@ -1,4 +1,5 @@
-import stringReplacer from "../Utils/stringReplacer";
+
+import stringReplacer from "../Utils/stringReplacer"
 
 type StringTestVariables = {
   input: string;
