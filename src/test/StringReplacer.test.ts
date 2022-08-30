@@ -7,7 +7,7 @@ type StringTestVariables = {
 
 describe("Replaces special characters ! @ # $ % ^ & * . with a space", () => {
   const stringTestVariables: StringTestVariables[] = [
-    { input: "hello%world", expected: "hello world" },
+    { input: "hello%worl", expected: "hello world" },
     { input: "!hello world", expected: "hello world" },
     { input: ";hello?world!", expected: "hello world" },
     { input: "hello;world", expected: "hello world" },
