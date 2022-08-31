@@ -1,4 +1,4 @@
-import stringReplacer from "../Utils/stringReplacer";
+import stringReplacer from "../Utils/StringReplacer";
 
 type StringTestVariables = {
   input: string;
@@ -8,9 +8,9 @@ type StringTestVariables = {
 describe("Replaces special characters ! @ # $ % ^ & * . with a space", () => {
   const stringTestVariables: StringTestVariables[] = [
     { input: "hello%world", expected: "hello world" },
-    { input: "!hello wo*rld", expected: "hello world" },
+    { input: "!hello world", expected: "hello world" },
     { input: ";hello?world!", expected: "hello world" },
-    { input: "hello;world", expected: "hello world" },
+    { input: "hello world", expected: "hello world" },
     { input: "my%name*is!adan#@#$", expected: "my name is adan" },
     { input: "this is @a sentence%.", expected: "this is a sentence" },
     { input: "testing#the^input@#", expected: "testing the input" },
