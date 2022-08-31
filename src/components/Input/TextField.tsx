@@ -1,34 +1,35 @@
 import React, { useState } from "react";
-import stringReplacer from "../Utils/StringReplacer";
+import stringReplacer from "../../Utils/StringReplacer";
 
 export const TextField: React.FC = () => {
   const [message, setMessage] = useState<string>("");
   const [newMessage, setNewMessage] = useState<string>("");
   const [showMessage, setShowMessage] = useState<boolean>(false);
 
-  const formSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
+  const preventFormSub = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
   };
 
-  const handleChange = (e: React.FocusEvent<HTMLInputElement>): void => {
+  const getUserMSG = (e: React.FocusEvent<HTMLInputElement>): void => {
     setMessage(e.currentTarget.value);
   };
 
-  const handleClick = () => {
+  const setUserMSG = () => {
     const newString = stringReplacer(message);
     setShowMessage(true);
     setNewMessage(newString);
   };
 
   return (
-    <div>
+    <div className="TF-form-main-container">
+      <h1>Turners Home</h1>
       <form
         onSubmit={(e) => {
-          formSubmit(e);
+          preventFormSub(e);
         }}
       >
-        <input type="text" name="text" onChange={handleChange} />
-        <input type="submit" value="Replacer" onClick={handleClick} />
+        <input type="text" name="text" onChange={getUserMSG} />
+        <input type="submit" value="Replace" onClick={setUserMSG} />
       </form>
       <div>{showMessage && <h1>{newMessage}</h1>}</div>
     </div>
