@@ -1,13 +1,16 @@
 import React from "react";
-import { Input } from "../components/Input";
+import { TextField } from "../components/Input/TextField";
+import { NavBar } from "../components/Navbar/NavBar";
+import { Footer } from "../components/Footer/Footer";
+import { Header } from "../components/Header.tsx/Header";
 
 export const Home = () => {
   return (
     <div>
-      <h1>Home</h1>
-      <div>
-        <Input />
-      </div>
+      <NavBar />
+      <Header />
+      <TextField />
+      <Footer />
     </div>
   );
 };

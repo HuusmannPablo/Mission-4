@@ -1,0 +1,99 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+//Navbar
+.NB-main-flex-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.turners-logo {
+  width: 211px;
+  height: auto;
+  margin-left: 5%;
+}
+
+button[type="button"] {
+  padding: 6px 16px;
+  border-radius: 6px;
+  border-style: none;
+  background-color: #376aa3;
+  color: white;
+  box-shadow: 2px 2px grey;
+  cursor: pointer;
+}
+
+.NB-button-container {
+  align-self: center;
+  margin-right: 2%;
+}
+
+.NB-button-container-one {
+  align-self: center;
+  margin-left: 3%;
+}
+//Header
+
+.header-img-container {
+  background-image: url("https://www.turners.co.nz/contentassets/52c5fa0f85a44e4abfc0bb635e649b20/img_2469_sky.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  //   filter: grayscale(100%);
+  width: 100%;
+  height: 35vh;
+}
+
+//TextField
+
+.TF-form-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1;
+  width: 100%;
+  height: 55vh;
+  h1 {
+    color: #376aa3;
+  }
+  form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  input[type="text"] {
+    padding: 8px 25px;
+    border-radius: 6px;
+    outline: 1px solid black;
+    border-style: none;
+  }
+  input[type="submit"] {
+    padding: 8px 10px;
+    border-radius: 6px;
+    background-color: #c13142;
+    color: white;
+    margin-left: 0.5%;
+    border-style: none;
+    cursor: pointer;
+    box-shadow: 2px 2px grey;
+  }
+}
+
+//Footer
+
+.footer-main-container {
+  height: 5vh;
+  width: 100%;
+  background-color: #376aa3;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
