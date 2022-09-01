@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import stringReplacer from "../../Utils/StringReplacer";
+import { APIButton } from "../APIbutton/APIButton";
 
 export const TextField: React.FC = () => {
   const [message, setMessage] = useState<string>("");
@@ -32,6 +33,7 @@ export const TextField: React.FC = () => {
         <input type="submit" value="Replace" onClick={setUserMSG} />
       </form>
       <div>{showMessage && <h1>{newMessage}</h1>}</div>
+      <APIButton />
     </div>
   );
 };

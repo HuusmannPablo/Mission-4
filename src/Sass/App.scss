@@ -86,6 +86,25 @@ button[type="button"] {
   }
 }
 
+.customer-btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  background-color: #c13142;
+  color: white;
+  margin-top: 10%;
+  border-style: none;
+  cursor: pointer;
+  box-shadow: 2px 2px grey;
+}
+
+.main-flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
 //Footer
 
 .footer-main-container {

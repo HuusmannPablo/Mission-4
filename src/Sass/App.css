@@ -81,6 +81,17 @@ button[type=button] {
   box-shadow: 2px 2px grey;
 }
 
+.customer-btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  background-color: #c13142;
+  color: white;
+  margin-top: 10%;
+  border-style: none;
+  cursor: pointer;
+  box-shadow: 2px 2px grey;
+}
+
 .footer-main-container {
   height: 5vh;
   width: 100%;
